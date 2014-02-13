@@ -10,5 +10,10 @@ http://homepage.ntlworld.com/myjamro/research/already_in_research/simulation_too
 http://www.mathtools.net/Fortran/Simulation/index.html
 http://silvert.home.sapo.pt/bsim/intro.htm
 http://silvert.home.sapo.pt/bsim/files/index.html
+http://simpy.sourceforge.net/old/simpy_overview.htm  SimPy Simulation Package
 
-
+Soft
+======
+http://simpy.sourceforge.net/old/simpy_overview.htm
+http://julialang.org/downloads/
+https://s3.amazonaws.com/julialang/bin/osx/x64/0.2/julia-0.2.dmg
