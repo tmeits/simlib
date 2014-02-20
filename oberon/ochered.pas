@@ -1,4 +1,6 @@
-{Оберон 2} 
+{
+Оберон 2
+} 
 {http://informatika.kspu.ru/mproj/umk_modeling/lection6.php#2}
 Program Ochered;
 {входной поток равновероятных событий;
