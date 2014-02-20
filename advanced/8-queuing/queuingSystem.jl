@@ -7,7 +7,8 @@ export random_gaussian, Queuing_System, run_to_end
 function random_gaussian(mean::Float64, std_dev::Float64)
     mean + (rand() - 0.5) * std_dev
 end
-#
+##
+##
 type Queuing_System
     ## These variables are set directly by the creator
     arrival_times::Array{Float64,1}
