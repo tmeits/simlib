@@ -17,3 +17,13 @@ Soft
 http://simpy.sourceforge.net/old/simpy_overview.htm
 http://julialang.org/downloads/
 https://s3.amazonaws.com/julialang/bin/osx/x64/0.2/julia-0.2.dmg
+
+Try Julia Lang
+======
+http://www.compileonline.com/execute_julia_online.php
+http://forio.com/julia/repl/
+
+Julia Lang Docs
+======
+http://arxiv.org/pdf/1209.5145.pdf
+

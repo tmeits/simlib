@@ -4,8 +4,7 @@ module ssqs
 importall Base
 const 
     qlimit = 100
-type 
-    model
+type model
     aniq:: Float64
     autil:: Float64
     busy:: Int
@@ -23,8 +22,46 @@ type
     tne:: Array{Float64,1}
     totcus:: Int
     totdel:: Float64 
+
 # Constructor definition
-function model()
+function model(nevnts:: Int, 
+               busy:: Int, 
+               idle:: Int,
+               marrvt:: Float64, 
+               mservt:: Float64, 
+               totcus:: Int)
+#
+    aniq,
+    autil,
+    next,
+    niq,
+    numcus,
+    server,
+    tarrvl,
+    time,
+    tlevnt,
+    tne,
+    totdel
+#
+    new(
+        aniq,
+        autil,
+        busy,
+        idle,
+        marrvt,
+        mservt,
+        nevnts,
+        next,
+        niq,
+        numcus,
+        server,
+        tarrvl,
+        time,
+        tlevnt,
+        tne,
+        totcus,
+        totdel
+    )    
     
 end
 end
@@ -40,7 +77,7 @@ idle = 0
 
 # Set input parameters.
 		     
-marrv = 1.
+marrvt = 1.
 mservt = .5
 totcus = 1000
 
