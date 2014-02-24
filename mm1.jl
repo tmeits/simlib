@@ -1,6 +1,11 @@
 # Main program for single-server queueing system.
-const qlimit = 100
-type model
+module ssqs
+
+importall Base
+const 
+    qlimit = 100
+type 
+    model
     aniq:: Float64
     autil:: Float64
     busy:: Int
@@ -18,6 +23,24 @@ type model
     tne:: Array{Float64,1}
     totcus:: Int
     totdel:: Float64 
+# Constructor definition
+function model()
+    
 end
+end
+end
+# Specify the number of event types for the timing routine.
+ 
+nevnts = 2
+        
+# Set mnemonics for server's being busy and idle.
 
+busy = 1
+idle = 0
+
+# Set input parameters.
+		     
+marrv = 1.
+mservt = .5
+totcus = 1000
 
