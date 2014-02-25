@@ -81,3 +81,6 @@ marrvt = 1.
 mservt = .5
 totcus = 1000
 
+# http://habrahabr.ru/post/28108/
+# http://habrahabr.ru/post/131951/
+# http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
