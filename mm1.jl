@@ -30,19 +30,25 @@ function model(nevnts:: Int,
                marrvt:: Float64, 
                mservt:: Float64, 
                totcus:: Int)
-#
-    aniq,
-    autil,
-    next,
-    niq,
-    numcus,
-    server,
-    tarrvl,
-    time,
-    tlevnt,
-    tne,
-    totdel
-#
+#Initialize the simulation clock.
+    time = 0.0 
+# Initialize the state variables.       
+    server = idle 
+    niq = 0
+    tlevnt = 0.0
+# Initialize the statistical counters.
+    numcus = 0
+    totdel = 0.0
+    aniq = 0.0
+    autil = 0.0
+# Initialize event list. Since no customers are present, the
+# departure (service completion) event is eliminated from
+# consideration.
+    tne = [time + exp(marrvt), 1.0e+30]
+
+    next = 0.
+    tarrvl = rand(qlimit)
+
     new(
         aniq,
         autil,
@@ -81,6 +87,33 @@ marrvt = 1.
 mservt = .5
 totcus = 1000
 
+# Create our new queuing system
+qs = model(2, 1, 0, 1., .5, 1000)
+
+function timing(qs:: model)
+end
+
+function timing(qs:: model)
+end
+
+function timing(qs:: model)
+end
+
+function timing(qs:: model)
+end
+
+function timing(qs:: model)
+end
+
 # http://habrahabr.ru/post/28108/
 # http://habrahabr.ru/post/131951/
 # http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+
+type mmm5 
+    m::Array{Float64,1} 
+    function mmm5() 
+        m=[1.,2.]
+        new(m)
+    end 
+end
+
